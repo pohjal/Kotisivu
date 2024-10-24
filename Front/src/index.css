@@ -1,0 +1,17 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #bb8b8b;
+    background-image: url('./assets/Etusivu.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+  }

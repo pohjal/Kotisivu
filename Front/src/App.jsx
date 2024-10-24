@@ -1,22 +1,20 @@
-import './App.css'
+import React from 'react';
+import './App.css'; // Add global styles if necessary
+import Sidebar from './components/Sidebar.jsx'; // Correct
 
-const Kissa = () => {
+
+const Landingpage = () => {
+  return <> kissa</>
+}
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello, Kissa Component!</h1>
+    <div className="App">
+      <Sidebar /> 
+ 
+    <Landingpage/>
     </div>
   );
 };
 
-
-function App() {
-
-  return (
-    <>
-    <Kissa/>
-  
-    </>
-  )
-}
-
-export default App
+export default App;
