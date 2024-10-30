@@ -1,18 +1,13 @@
 import React from 'react';
 import './App.css'; // Add global styles if necessary
-import Sidebar from './components/Sidebar.jsx'; // Correct
-
-
-const Landingpage = () => {
-  return <> kissa</>
-}
+import Etusivu from './components/Etusivu.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 const App = () => {
   return (
     <div className="App">
-      <Sidebar /> 
- 
-    <Landingpage/>
+      <Sidebar/> 
+      <Etusivu/>
     </div>
   );
 };

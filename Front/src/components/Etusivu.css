@@ -1,5 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./../assets/Etusivu.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+  }
+
+
 .etusivu-container{
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    }
+
+.logo-container,.etusivu-content-container{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 12%;
+    height: 50%;
+
+}
+.etusivu-content-container{
+    justify-content: center;
+}
+
+.logo-container{
+    margin-top: 17px;
 }
