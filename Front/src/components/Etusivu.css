@@ -1,10 +1,11 @@
 body {
-    font-family: 'Arial', sans-serif;
+
     background-image: url('./../assets/Etusivu.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+    overflow: hidden;
   }
 
 
@@ -17,8 +18,7 @@ body {
 .logo-container,.etusivu-content-container{
     display: flex;
     flex-direction: column;
-
-    margin-left: 12%;
+    margin-left: 8%;
     height: 50%;
 
 }
@@ -28,4 +28,139 @@ body {
 
 .logo-container{
     margin-top: 17px;
+}
+.etusivu-content-container .plain-text {
+ width: 50%;
+}
+
+
+@media (max-width: 1770px) {
+   
+
+    .etusivu-content-container, .logo-container
+     {
+        font-size: 40px !important;;
+    }
+
+       .etusivu-container .plain-text {
+        font-size: 40px !important;;
+    }
+    .etusivu-container .header-text {
+        font-size: 60px !important;;
+    }
+
+}
+
+/* Large Devices (Tablets and Small Laptops) */
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .etusivu-content-container, .logo-container
+    {
+       font-size: 30px !important;;
+   }
+
+      .etusivu-container .plain-text {
+       font-size: 30px !important;;
+   }
+   .etusivu-container .header-text {
+       font-size: 50px !important;;
+   }
+   .logo-container,.etusivu-content-container{
+
+    margin-left: 13%;
+
+}
+
+}
+
+/* Medium Devices (Large Smartphones and Small Tablets) */
+@media (min-width: 820px) and (max-width: 999px) {
+    .etusivu-content-container, .logo-container
+    {
+       font-size: 25px !important;;
+   }
+
+      .etusivu-container .plain-text {
+       font-size: 25px !important;;
+   }
+   .etusivu-container .header-text {
+       font-size: 45px !important;;
+   }
+   .logo-container,.etusivu-content-container{
+    margin-left: 13%;
+}
+
+}
+
+/* Small Devices (Smartphones) */
+@media (max-width: 819px) {
+    .etusivu-content-container, .logo-container
+    {
+       font-size: 20px !important;;
+   }
+
+      .etusivu-container .plain-text {
+       font-size: 20px !important;;
+   }
+   .etusivu-container .header-text {
+       font-size: 30px !important;;
+   }
+   .logo-container,.etusivu-content-container{
+    margin-left: 15%;
+}
+}
+
+/* Small Devices (Smartphones) */
+@media (max-width: 819px) {
+    .etusivu-content-container, .logo-container
+    {
+       font-size: 20px !important;;
+   }
+
+      .etusivu-container .plain-text {
+       font-size: 20px !important;;
+   }
+   .etusivu-container .header-text {
+       font-size: 30px !important;;
+   }
+   .logo-container,.etusivu-content-container{
+    margin-left: 15%;
+}
+}
+
+/* Very Small Devices (Narrow Smartphones) */
+@media (max-width: 600px) {
+    .etusivu-content-container, .logo-container {
+        font-size: 18px !important;
+    }
+
+    .etusivu-container .plain-text {
+        font-size: 18px !important;
+    }
+
+    .etusivu-container .header-text {
+        font-size: 24px !important;
+    }
+
+    .logo-container, .etusivu-content-container {
+        margin-left: 15%;
+    }
+}
+
+/* Very Small Devices (Extra-Narrow Smartphones) */
+@media (max-width: 480px) {
+    .etusivu-content-container, .logo-container {
+        font-size: 16px !important;
+    }
+
+    .etusivu-container .plain-text {
+        font-size: 16px !important;
+    }
+
+    .etusivu-container .header-text {
+        font-size: 22px !important;
+    }
+
+    .logo-container, .etusivu-content-container {
+        margin-left: 20%;
+    }
 }

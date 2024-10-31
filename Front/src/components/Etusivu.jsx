@@ -8,10 +8,10 @@ const Etusivu = () => {
         
  <div className="etusivu-container">
     <div className="logo-container">
-  <Headertext teksti="Leevi Pohja" size={40} /></div>
+  <Headertext teksti="Leevi Pohja" size={60} /></div>
   <div className="etusivu-content-container">
-  <Headertext teksti="Welcome to my homepage" size={60} />
-    <Bodytext teksti="Explore this page to learn more about me and my projects"size={30} /></div>
+  <Headertext teksti="Welcome to my homepage" size={80} />
+    <Bodytext teksti="Explore this page to learn more about me and my projects"size={50} /></div>
  </div>
         
     )
