@@ -189,10 +189,9 @@ transform: translate(-50%);
   .sidebar a {
     display: none; /* Hide items initially */
     padding: 15px 20px;
-
     width: 100%;
     text-align: center; /* Center align the text */
-    font-size: 1.2em; /* Adjust font size for better readability */
+    font-size: 1.5em; /* Adjust font size for better readability */
     color: black;
     text-decoration: none;
   }
@@ -202,7 +201,7 @@ transform: translate(-50%);
   }
 
   .sidebar a:hover {
-    background-color: #e6e6e3; /* Slight background change on hover */
-    color: black;
+    color: #d4d4cb 
   }
+  
 }
