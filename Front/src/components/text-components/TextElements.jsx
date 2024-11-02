@@ -1,4 +1,4 @@
-import './Textelements.css';
+import './TextElements.css';
 
 const Headertext = ({ teksti, size }) => {
     return (

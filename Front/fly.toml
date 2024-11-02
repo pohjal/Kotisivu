@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for front-green-bush-8158 on 2024-11-02T21:38:01+02:00
+# fly.toml app configuration file generated for leevi-floral-leaf-8648 on 2024-11-02T21:50:28+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'front-green-bush-8158'
+app = 'leevi-floral-leaf-8648'
 primary_region = 'cdg'
 
 [build]
