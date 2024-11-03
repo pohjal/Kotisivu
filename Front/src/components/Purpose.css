@@ -1,5 +1,5 @@
 .purpose-container{
-    display: flex;
+   display: flex;
    height: 30vh;
    background-color: #f9f9f7;
    border: solid 1px black;
@@ -20,7 +20,7 @@
 .purpose-small-text-container{
     margin-left: 10%;
     display: flex;
-    width: auto;
+
 }
 
 
@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
+
 }
 
 .purpose-small-text-container{
@@ -42,7 +43,7 @@
 
     .purpose-large-text-container, 
     .purpose-small-text-container{
-        margin-left: 12%;
+        margin-left: 10%;
         display: flex;
     }
     
@@ -122,12 +123,14 @@
 @media (max-width: 680px) {
     .purpose-large-text-container, 
     .purpose-small-text-container{
-        margin-left: 15%;
+        margin-left: 6%;
         display: flex;
+       justify-content: center;
+       align-items: center;
     }
     
         .large-text{
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
         }
         
@@ -142,12 +145,12 @@
 @media (max-width: 480px) {
     .purpose-large-text-container, 
     .purpose-small-text-container{
-        margin-left: 15%;
+        margin-left: 4%;
         display: flex;
     }
     
         .large-text{
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
         }
         
@@ -161,19 +164,17 @@
 @media (max-width: 320px) {
     .purpose-large-text-container, 
     .purpose-small-text-container{
-        margin-left: 15%;
+        margin-left: 4%;
         display: flex;
     }
     
         .large-text{
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 600;
         }
         
         
         .small-text{
-            font-size: 11px;
+            font-size: 10px;
         }
-
-
 }
