@@ -1,0 +1,60 @@
+
+
+.explore-container {
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+    background-color: #f9f9f7;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.infoCard-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 700px;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.infoCard-picture{
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    transition: all 0.3s ease-in-out; /* Applies to all properties for a smooth transition */
+}
+
+
+.infoCard-picture:hover{
+    transform: scale(1.05); /* Increases the size by 5% */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition in both directions */
+}
+
+.largeText, .smallText{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.largeText{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  
+}
+
+.smallText{
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.info-link{
+    display: flex;
+}
+
+.info-link:hover{
+    color: #d4d4cb;
+}
