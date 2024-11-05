@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css'; 
-import Etusivu from './components/Etusivu.jsx';
-import Sidebar from './components/Sidebar.jsx';
-import Purpose from './components/Purpose.jsx';
-import Explore from './components/Explore.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Landingpage from './pages/Landingpage.jsx';
+import Projects from './pages/Projects.jsx';
+import About from './pages/About.jsx';
 
 const App = () => {
   return (
     <div className="App">
-      <Sidebar/> 
-      <Etusivu/>
-      <Purpose/>
-      <Explore/>
+      <Routes>
+        <Route path="/" element={<Landingpage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 };

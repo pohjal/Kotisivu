@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -49,10 +50,10 @@ const Sidebar = () => {
       </div>
 
       <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <a href="#home">Home</a>
-        <a href="#about">Projects</a>
-        <a href="#services">Apps</a>
-        <a href="#contact">Contact</a>
+        <Link to="/" onClick={toggleSidebar}>Home</Link>
+        <Link to="/projects" onClick={toggleSidebar}>Projects</Link>
+        <Link to="/apps" onClick={toggleSidebar}>Apps</Link>
+        <Link to="/about" onClick={toggleSidebar}>Contact</Link>
       </nav>
     </div>
   );
