@@ -1,0 +1,95 @@
+/* Full Page About Me Section */
+.about-me {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* About Me Content Wrapper */
+.about-me-content {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px; /* Limit maximum width */
+    width: 100%; /* Ensure full width */
+    gap: 40px; /* Space between elements */
+    flex-wrap: wrap; /* Stack items on smaller screens */
+}
+
+/* Text Content */
+.about-me-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-me-title {
+    font-size: 3rem;
+ 
+    color: #0077b6; /* Blue title */
+    font-weight: bold;
+}
+
+.about-me-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: #555555; /* Medium grey for text */
+}
+
+.about-me-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #0077b6; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-me-button:hover {
+    background-color: #005f87; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Image Content */
+.about-me-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .about-me-text {
+        max-width: 100%;
+    }
+
+    .about-me-title {
+        font-size: 2.5rem;
+    }
+
+    .about-me-description {
+        font-size: 1rem;
+    }
+}

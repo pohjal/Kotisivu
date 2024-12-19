@@ -1,0 +1,152 @@
+/* General Footer Styling */
+.footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+    border-top: 1px solid #e0e0e0; /* Subtle top border */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; /* Center the sections horizontally */
+    align-items: flex-start; /* Align content at the top */
+    gap: 80px; /* Spacing between sections */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #000000; /* Black heading text */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #1f1e1e; /* Subtle bottom border */
+    padding-bottom: 5px;
+    width: 100%; /* Ensure headings align consistently */
+}
+
+/* Navigate Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #555555; /* Medium grey for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #0077b6; /* Blue hover effect */
+}
+
+/* LinkedIn Link */
+.linkedin-link {
+    font-size: 1rem;
+    color: #0077b6; /* Blue link */
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: #005f87; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Contact Button */
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b6; /* Blue background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #005f87; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    display: flex;
+    justify-content: center; /* Center align text */
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #777777; /* Subtle grey text */
+    border-top: 1px solid #1f1e1e;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align items */
+        gap: 40px; /* Reduced spacing for smaller screens */
+    }
+
+    .footer-section h4 {
+        font-size: 1.2rem; /* Slightly smaller heading font */
+    }
+
+    .footer-section ul li a,
+    .linkedin-link,
+    .contact-button {
+        font-size: 0.95rem; /* Adjust text size for readability */
+    }
+
+    .contact-button {
+        width: 80%; /* Wider button on smaller screens */
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 10px; /* Reduced padding */
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem; /* Smaller headings for compact screens */
+    }
+
+    .footer-section ul li a,
+    .linkedin-link,
+    .contact-button {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .contact-button {
+        width: 100%; /* Full-width button */
+    }
+}

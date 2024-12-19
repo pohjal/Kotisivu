@@ -1,0 +1,77 @@
+.contactFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.formContainer {
+    width: 90%; /* Make the form width dynamic for smaller screens */
+    max-width: 400px; /* Set a maximum width for larger screens */
+    height: auto; /* Allow height to adjust dynamically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px; /* Add some margin for better spacing on small screens */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take full width of .formContainer */
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%; /* Full width of the form */
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: none; /* Disable resize */
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .formContainer {
+        width: 95%; /* Increase responsiveness for smaller screens */
+        padding: 15px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.9rem; /* Slightly smaller inputs */
+        padding: 8px;
+    }
+}
